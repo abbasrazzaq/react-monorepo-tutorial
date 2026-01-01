@@ -7,11 +7,9 @@ import { Route, Routes, Link } from 'react-router-dom';
 
 export function App() {
   return (
-
     <div>
-
       <Hero
-        title="Welcmoe to our Demo Abbas"
+        title="Welcome to our Demo Abbas"
         subtitle="Build something amazing today"
         cta="Get Started"
       />
