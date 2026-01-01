@@ -24,4 +24,13 @@ describe('App', () => {
         0
     ).toBeTruthy();
   });
+
+  it('should render Hero component with correct props', () => {
+    const { getByText } = render(
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    );
+    expect(getByText('Welcome to our Demo Abbas')).toBeTruthy();
+  });
 });

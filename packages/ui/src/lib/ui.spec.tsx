@@ -7,4 +7,9 @@ describe('ReactDemoUi', () => {
     const { baseElement } = render(<ReactDemoUi />);
     expect(baseElement).toBeTruthy();
   });
+
+  it('should display the correct text', () => {
+    const { getByText } = render(<ReactDemoUi />);
+    expect(getByText('Welcome to ReactDemoUi!')).toBeTruthy();
+  });
 });
